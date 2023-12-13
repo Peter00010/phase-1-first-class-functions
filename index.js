@@ -5,9 +5,9 @@ function receivesAFunction(callback){
 
 
 function returnsANamedFunction(){
-    return function (sayHello){
-        console.log('Hello');
-        sayHello();
+    return function (sayHello, name){
+        console.log(`Hello ${name}`);
+        sayHello(Peter);
     };
 }
 
